@@ -1,0 +1,5 @@
+<% if user_signed_in? %>
+	Hi there, <%= current_user.email %>
+	<% else %>
+	<% redirect_to '/login' %>
+<% end %>
