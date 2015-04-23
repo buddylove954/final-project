@@ -3,5 +3,6 @@ class AddSkillandTopGamesToUsers < ActiveRecord::Migration
   	add_column :users, :skill, :integer
   	add_column :users, :topgame, :string
   	add_column :users, :profile_pic, :string
+  	add_column :users, :name, :string
   end
 end
