@@ -1,5 +1,3 @@
-<% if user_signed_in? %>
-	Hi there, <%= current_user.email %>
-	<% else %>
-	<% redirect_to '/login' %>
-<% end %>
+<h1>Home Page</h1>
+
+<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>

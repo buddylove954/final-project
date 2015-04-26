@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+.signup {
+	margin-left: 15px;
+}
+
+.login {
+	margin-left: 15px;
+}
