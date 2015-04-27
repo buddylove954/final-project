@@ -3,8 +3,10 @@ class UsersController < ApplicationController
 
 	def home
 		@twitch = Twitch.new
-	    @result = @twitch.getStream("itshafu")
-	    @response = @result[:body]['_links']['channel']
+	    @result = @twitch.getStream("dendi")
+	    @id = @result[:body]['stream']['_id']
+
+	    @channel = @result[:body]['_links']['channel'].split("channels/")[1]
 		render(:home)
 	end
 end

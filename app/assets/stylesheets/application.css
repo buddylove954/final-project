@@ -21,3 +21,11 @@
 .login {
 	margin-left: 15px;
 }
+
+.profile {
+	float: right;
+}
+
+.twitchplayer {
+	float: left;
+}
