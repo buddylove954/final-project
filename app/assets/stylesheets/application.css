@@ -29,3 +29,47 @@
 .twitchplayer {
 	float: left;
 }
+
+.top-row {
+	background-color: #368256;
+}
+
+.links  {
+	float: right;
+	margin-right: 40px;
+	margin-top: 10px;
+	margin-bottom: -5px;
+}
+
+ i {
+ 	font-size: 30px;
+ }
+
+ .fa-gamepad {
+ 	color: red;
+ 	margin-left: 6px;
+ }
+
+ .fa-home {
+	color: #735A4C;
+	margin-left: 3px;
+ }
+
+.fa-user {
+	color: black;
+ 	margin-left: 12px;	
+}
+
+li {
+	margin: 4px;
+}
+
+.form-control {
+	width: 250px;
+	margin-top: 20px;
+}
+
+.btn {
+	margin-left: 252px;
+	margin-top: -56px;
+}
