@@ -28,6 +28,14 @@
 
 .twitchplayer {
 	float: left;
+	background-color: white;
+	padding: 10px;
+	border-radius: 5%;
+}
+
+.logo {
+	margin-top: -29px;
+	margin-left: 150px;
 }
 
 .top-row {
@@ -51,12 +59,12 @@
  }
 
  .fa-home {
-	color: #735A4C;
+	color: #292E31;
 	margin-left: 3px;
  }
 
 .fa-user {
-	color: black;
+	color: #292E31;
  	margin-left: 12px;	
 }
 
@@ -72,4 +80,12 @@ li {
 .btn {
 	margin-left: 252px;
 	margin-top: -56px;
+}
+
+body {
+	background-color: #292E31;
+}
+
+.views {
+	float: right;
 }
