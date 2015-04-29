@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-fluid">
 	<div class="row">
 		<div class="twitchplayer">
       <h2><img class="logo" src="<%= @logo %>"></h2>
@@ -8,7 +8,7 @@
   <h4 class="user">User: <%= @channel %>   <strong class="views">viewers: <%= @views %></strong></h4>
   		</div>
   			<div class="profile">
-  				<h3>Welcome</h3>
+          <div class="profilepic"></div>
   				<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
   			</div>
 
