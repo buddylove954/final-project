@@ -29,11 +29,9 @@
 }
 
 .twitchplayer {
-	float: left;
 	background-color: white;
 	padding: 10px;
 	border-radius: 5%;
-	margin-left: 100px;
 	border: 2px solid #368256;
 }
 
@@ -53,7 +51,7 @@
 	margin-bottom: -5px;
 }
 
- i {
+ .fa {
  	font-size: 30px;
  }
 
@@ -103,4 +101,75 @@ body {
 
 .userpro {
 	color: #368256;
+	margin-left: 10px;
+}
+
+.field  {
+	margin-left: 45px;
+}
+
+.edit_head {
+	margin-left: 45px;
+	color:white;
+}
+
+.labels {
+	color: white;
+}
+
+.unhappy {
+	color: white;
+	margin-left: 105px;
+}
+
+.delete_button {
+	margin-left: 75px;
+}
+
+.update {
+	margin-left: 90px;
+	margin-top: 5px;
+}
+
+.account_del {
+	margin-left: 40px;
+	color: white;
+}
+
+.uone {
+	color: green;
+	margin-right: 5px;
+	font-size: 12px;
+}
+
+div.scroll {
+    background-color: white;
+    border: 10px solid #368256;
+    width: 300px;
+    height: 100vh;
+    margin-top: -72px;
+    margin-left: -15px;
+	position: absolute;
+    overflow: scroll;
+	
+}
+
+::-webkit-scrollbar {
+    height: 12px;
+    width: 16px;
+    background: #368256;
+}
+
+::-webkit-scrollbar-thumb {
+    background: lightgreen;
+    -webkit-border-radius: 1px;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+    background: #368256;
+}
+
+.sidebox {
+	margin: 2px;
 }
