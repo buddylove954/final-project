@@ -8,7 +8,8 @@
   <h4 class="user">User: <%= @channel %>   <strong class="views">viewers: <%= @views %></strong></h4>
   		</div>
   			<div class="profile">
-          <div class="profilepic"></div>
+          <h6 class="userpro"><%= current_user.name %></h6>
+          <div class="profilepic"><img class="profilepic" src="<%= current_user.avatar.url.to_s %>"></div>
   				<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
   			</div>
 
