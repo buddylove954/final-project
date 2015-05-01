@@ -13,13 +13,13 @@
   <% end %>
 
   <div class="field">
-    <h4 class="labels"><%= f.label :name %><br /></h4>
+    <h4 class="labels"><%= f.label :Username %><br /></h4>
     <%= f.text_field :name %>
   </div>
 
   <div class="field">
-    <h4 class="labels"><%= f.label :topgame %><br /></h4>
-    <%= f.text_field :topgame %>
+    <h4 class="labels"><%= f.label :top_game %><br /></h4>
+    <%= f.select(:topgame, $GAME_DROPDOWN.sort) %>
   </div>
 
   <div class="field">

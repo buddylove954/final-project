@@ -147,8 +147,8 @@ div.scroll {
     border: 10px solid #368256;
     width: 300px;
     height: 100vh;
-    margin-top: -72px;
-    margin-left: -15px;
+    margin-top: -16%;
+    margin-left: -4%;
 	position: absolute;
     overflow: scroll;
 	
@@ -179,7 +179,8 @@ div.scroll {
 	height: 70px;
 	margin-left: 35%;
 	margin-top: 2%;
-	border-radius: 5%;
+	border-radius: 50%;
+	border: 1px solid black;
 }
 
 .skills {
@@ -208,11 +209,37 @@ div.scroll {
 	height: 40px;
 	border-radius: 30%;
 	float: right;
-	margin-top: -18%;
+	margin-top: -19%;
 	margin-right: 7%;
 }
 
 .topgamelist {
 	float: right;
 	margin-top: -30%;
+}
+
+.signout a {
+	color: #292E31;
+}
+
+.fa-sign-out {
+	margin-left: 20%;
+	color: red;
+}
+
+.settings {
+	text-align: center;
+}
+
+.settings a {
+	color:#368256;
+}
+
+.flash {
+	color: white;
+}
+
+.remember {
+	color:white;
+	opacity: .7;
 }
