@@ -101,7 +101,6 @@ body {
 
 .userpro {
 	color: #368256;
-	margin-left: 10px;
 }
 
 .field  {
@@ -149,7 +148,6 @@ div.scroll {
     height: 100vh;
     margin-top: -16%;
     margin-left: -4%;
-	position: absolute;
     overflow: scroll;
 	
 }
@@ -197,6 +195,7 @@ div.scroll {
 
 .sidename {
 	text-align: center;
+	margin-top: 12%;
 }
 
 .level {
@@ -223,6 +222,15 @@ div.scroll {
 }
 
 .fa-sign-out {
+	margin-left: 20%;
+	color: #292E31;
+}
+
+.usersettings a {
+	color: #292E31;
+}
+
+.fa-pencil-square-o {
 	margin-left: 20%;
 	color: red;
 }

@@ -11,7 +11,7 @@
           <% end %>
           <li><h4 class="level">Level </h4> <p class="skills"><%= user.skill %></p></li>
           <li><h4 class="topgamelist"> Top Game </h4>
-            <%= link_to(image_tag("#{user.topgame.split(" ").join("").downcase.delete(":")}.png", :alt => "logo", :title => "Home", :class => "logoimg"), "/") %></li>
+            <%= link_to(image_tag("#{user.topgame.split(" ").join("").downcase.delete(":").delete("/")}.png", :alt => "logo", :title => "Home", :class => "logoimg"), "/") %></li>
           <% end %>
         </ul>
       </p></div>
@@ -29,7 +29,6 @@
       <div class="profile">
         <h5 class="userpro"><i class="fa fa-user uone"></i><%= current_user.name %></h5>
         <div class="profilepic"><img class="profilepic" src="<%= current_user.avatar.url.to_s %>"></div>
-        <h5 class="settings"><%= link_to "settings", edit_user_registration_path, :method => :get %></h5>
       </div>
     </div>
   </div>
