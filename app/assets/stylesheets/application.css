@@ -251,3 +251,10 @@ div.scroll {
 	color:white;
 	opacity: .7;
 }
+
+.logoimg2 {
+	width: 50px;
+	height: 50px;
+	border-radius: 30%;
+	margin-top: 3%; 
+}

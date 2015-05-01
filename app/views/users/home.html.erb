@@ -29,6 +29,9 @@
       <div class="profile">
         <h5 class="userpro"><i class="fa fa-user uone"></i><%= current_user.name %></h5>
         <div class="profilepic"><img class="profilepic" src="<%= current_user.avatar.url.to_s %>"></div>
+        <ul class="list-inline">
+        <li><%= link_to(image_tag("#{current_user.topgame.split(" ").join("").downcase.delete(":").delete("/")}.png", :alt => "logo", :title => "Home", :class => "logoimg2"), "/") %></li>
+        </ul>
       </div>
     </div>
   </div>
