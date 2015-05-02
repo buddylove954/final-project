@@ -261,5 +261,23 @@ div.scroll {
 
 .gamesheader {
 	color: white;
-	margin-left: 10%;
+	margin-left: -0.5%;
+}
+
+.gamesheader2 {
+	color: white;
+	margin-left: -1%;
+}
+
+.usernametag {
+	margin-left: -3%;
+}
+
+
+.dropdown {
+	margin-left: -5%;
+}
+
+.gameaddbox {
+	margin-left: 5%;
 }

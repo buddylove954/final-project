@@ -1,11 +1,11 @@
 <%= form_for @games do |f| %>
-<div class="addgameblock">
-  <h3 class="gamesheader"><%= f.label :Game %></h3>
-  <%= f.select(:game, $GAME_DROPDOWN.sort) %>
+<div class="gameaddbox">
+  <h3 class="gamesheader"><%= f.label :Games %></h3>
+  <div class="dropdown"><%= f.select(:game, $GAME_DROPDOWN.sort) %></div>
   <br>
-  <h3 class="gamesheader"><%= f.label :Gamer_Tag %></h3>
-  <%= f.text_field :username %>
+  <h3 class="gamesheader2"><%= f.label :Gamer_Tag %></h3>
+  <div class="usernametag"><%= f.text_field :username %></div>
   <br>
-  <div class="gamebuttton"><%= f.submit "Add Game" %></div>
+  <%= f.submit "Add Game" %>
 </div>
 <% end %>
