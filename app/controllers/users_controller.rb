@@ -12,6 +12,8 @@ class UsersController < ApplicationController
 			end
 				
 		end
+		@games = Game.where(user_id: current_user.id)
+		@games = @games.sample(2)
 		@arr = @arr.delete_if {|array| array == nil}
 		puts @arr
 		puts current_user.topgame
@@ -21,5 +23,8 @@ class UsersController < ApplicationController
 		render(:home)
 		# @game = @twitch.getStreams("game"=>current_user.topgame)[:body]
 		# render json: @game
+	end
+
+	def show
 	end
 end

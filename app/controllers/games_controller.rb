@@ -13,6 +13,10 @@ class GamesController < ApplicationController
 		end
 	end
 
+	def index
+		@games = Game.all
+	end
+
 	private
 
 	def games_params

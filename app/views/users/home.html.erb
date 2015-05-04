@@ -11,7 +11,7 @@
           <% end %>
           <li><h4 class="level">Level </h4> <p class="skills"><%= user.skill %></p></li>
           <li><h4 class="topgamelist"> Top Game </h4>
-            <%= link_to(image_tag("#{user.topgame.split(" ").join("").downcase.delete(":").delete("/")}.png", :alt => "logo", :title => "Home", :class => "logoimg"), "/") %></li>
+            <%= link_to(image_tag("#{user.topgame.downcase.delete(":/\\- ")}.png", :alt => "logo", :title => "Home", :class => "logoimg"), "/") %></li>
           <% end %>
         </ul>
       </p></div>
@@ -30,7 +30,12 @@
         <h5 class="userpro"><i class="fa fa-user uone"></i><%= current_user.name %></h5>
         <div class="profilepic"><img class="profilepic" src="<%= current_user.avatar.url.to_s %>"></div>
         <ul class="list-inline">
-        <li><%= link_to(image_tag("#{current_user.topgame.split(" ").join("").downcase.delete(":").delete("/")}.png", :alt => "logo", :title => "Home", :class => "logoimg2"), "/") %></li>
+          <% if @games.length >= 2 %>
+          <% @games.each do |game| %>
+          <li><%= link_to(image_tag("#{game.game.downcase.delete(":/\\- ")}.png", :alt => "logo", :title => "Home", :class => "logoimg2"), "/") %></li>
+          <% end %>
+        <% end %>
+        <li><%= link_to(image_tag("#{current_user.topgame.downcase.delete(":/\\- ")}.png", :alt => "logo", :title => "Home", :class => "logoimg2"), "/") %></li>
         </ul>
       </div>
     </div>

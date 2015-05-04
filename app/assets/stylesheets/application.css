@@ -281,3 +281,21 @@ div.scroll {
 .gameaddbox {
 	margin-left: 5%;
 }
+
+.gamepageimg {
+	width: 140px;
+	height: 140px;
+}
+
+
+.gamesfloat {
+	float: left;
+	margin-left: 4%;
+	margin-top: 2%;
+}
+
+.gamehead {
+	text-align: center;
+	color: white;
+
+}

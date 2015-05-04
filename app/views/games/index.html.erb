@@ -1,0 +1,8 @@
+<h1 class="gamehead">Games</h1>
+<% $GAME_DROPDOWN.sort.flatten.each do |game| %>
+<ul class="list-inline gamesfloat">
+	<li>
+<%= link_to(image_tag("#{game.downcase.delete(":/\\- ")}.png", :alt => "logo", :title => "Home", :class => "gamepageimg"), "/games") %>
+	</li>
+</ul>
+<% end %>
