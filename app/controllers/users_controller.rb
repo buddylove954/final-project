@@ -25,6 +25,12 @@ class UsersController < ApplicationController
 		# render json: @game
 	end
 
+	def index
+		@users = User.all
+		render(:index)
+	end
+
 	def show
+
 	end
 end

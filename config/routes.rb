@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   root to: "users#home"
 
   get "/users/:id/" => 'users#show'
+  get "/index" => 'users#index'
   resources :games
 end
