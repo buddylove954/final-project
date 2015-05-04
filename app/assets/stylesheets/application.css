@@ -299,3 +299,12 @@ div.scroll {
 	color: white;
 
 }
+
+.twitchplayer2 {
+	background-color: white;
+	padding: 10px;
+	border-radius: 5%;
+	border: 2px solid #368256;
+	width: 32%;
+	margin-left: 34%;
+}

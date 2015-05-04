@@ -1,0 +1,10 @@
+<h1 class="gamehead"><%= $GAME_DROPDOWN[@game_idx][0] %> </h1>
+
+<div class="twitchplayer2">
+        <h2><img class="logo" src="<%= @logo %>"></h2>
+        <iframe id="<%= @arr[0][:id] %>" type="text/html" width="400px" height="300px"
+        src="http://www.twitch.tv/<%= @arr[0][:link] %>/embed"
+        frameborder="0"></iframe>
+        <h4 class="user">User: <%= @arr[0][:link] %>   <strong class="views">viewers: <%= @arr[0][:viewers] %></strong></h4>
+</div>
+<%= link_to(image_tag("#{$GAME_DROPDOWN[@game_idx][0].downcase.delete(":/\\- ")}.png", :alt => "logo", :title => "Home", :class => "gamepageimg"), "/games") %>
