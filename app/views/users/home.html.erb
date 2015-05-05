@@ -11,7 +11,7 @@
           <% end %>
           <li><h4 class="level">Level </h4> <p class="skills"><%= user.skill %></p></li>
           <li><h4 class="topgamelist"> Top Game </h4>
-            <%= link_to(image_tag("#{user.topgame.downcase.delete(":/\\- ")}.png", :alt => "logo", :title => "Home", :class => "logoimg"), "/") %></li>
+            <%= link_to(image_tag("#{user.topgame.downcase.delete(":/\\- ")}.png", :alt => "logo", :title => "Home", :class => "logoimg"), "/games/#{$GAME_DROPDOWN.flatten.index(user.topgame)}") %></li>
           <% end %>
         </ul>
       </p></div>
@@ -27,15 +27,23 @@
     </div>
     <div class="col-sm-4">
       <div class="profile">
+        <h4 class="levelhome">Level</h4>
+        <% if current_user.skill == nil %>
+          <% current_user.skill = 1 %>
+          <% end %>
+        <p class="skillsuser"><%= current_user.skill %></p>
         <h5 class="userpro"><i class="fa fa-user uone"></i><%= current_user.name %></h5>
         <div class="profilepic"><img class="profilepic" src="<%= current_user.avatar.url.to_s %>"></div>
+        <h5 class="useroptions">friends</h5>
+        <h5 class="useroptions">games</h5>
+        <h5 class="useroptions">messages</h5>
         <ul class="list-inline">
           <% if @games.length >= 2 %>
           <% @games.each do |game| %>
-          <li><%= link_to(image_tag("#{game.game.downcase.delete(":/\\- ")}.png", :alt => "logo", :title => "Home", :class => "logoimg2"), "/") %></li>
+          <li><%= link_to(image_tag("#{game.game.downcase.delete(":/\\- ")}.png", :alt => "logo", :title => "Home", :class => "logoimg2"), "/games/#{$GAME_DROPDOWN.flatten.index(game.game)}") %></li>
           <% end %>
         <% end %>
-        <li><%= link_to(image_tag("#{current_user.topgame.downcase.delete(":/\\- ")}.png", :alt => "logo", :title => "Home", :class => "logoimg2"), "/") %></li>
+        <li><%= link_to(image_tag("#{current_user.topgame.downcase.delete(":/\\- ")}.png", :alt => "logo", :title => "Home", :class => "logoimg2"), "/games/#{$GAME_DROPDOWN.flatten.index(current_user.topgame)}") %></li>
         </ul>
       </div>
     </div>
