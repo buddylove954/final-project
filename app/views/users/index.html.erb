@@ -3,7 +3,7 @@
 <% @users.each do |user| %>
 	<ul class="list-inline usersfloat">
 		<h4 class="userpro2"><%= user.name %></h4>
-		<div><%= link_to(image_tag("#{user.topgame.downcase.delete(":/\\- ")}.png", :alt => "logo", :title => "Home", :class => "logoimguser"), "/") %></div>
+		<div><%= link_to(image_tag("#{user.topgame.downcase.delete(":/\\- ")}.png", :alt => "logo", :title => "Home", :class => "logoimguser"), "/games/#{$GAME_DROPDOWN.flatten.index(user.topgame)}") %></div>
 	<li><img class="userpagepro" src="<%= user.avatar.url.to_s %>"></li>
 	</ul>
 	<% end %>
