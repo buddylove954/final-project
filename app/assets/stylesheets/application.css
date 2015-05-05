@@ -41,7 +41,7 @@
 }
 
 .top-row {
-	background-color: #368256;
+	background-color: #F9FD14;
 }
 
 .links  {
@@ -143,7 +143,7 @@ body {
 
 div.scroll {
     background-color: white;
-    border: 10px solid #368256;
+    border: 10px solid #F9FD14;
     width: 300px;
     height: 100vh;
     margin-top: -16%;
@@ -155,12 +155,12 @@ div.scroll {
 ::-webkit-scrollbar {
     height: 12px;
     width: 16px;
-    background: #368256;
+    background: #F9FD14;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: lightgreen;
-    -webkit-border-radius: 1px;
+    background: #CA0000;
+    -webkit-border-radius: 3px;
     -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
 }
 
@@ -332,4 +332,21 @@ div.scroll {
 
 .imgright {
 	margin-right: -10%;
+}
+
+.scrolls {
+	width: 40px;
+	height: 40px;
+}
+
+.alert {
+	color: red;
+}
+
+.notice {
+	color: white;
+}
+
+#error_explanation {
+	color: red;
 }
