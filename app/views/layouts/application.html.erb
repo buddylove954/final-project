@@ -18,11 +18,11 @@
 			<div class="col-sm-4">
 			<ul class="list-inline links">
 				<li><a class="homie" href="/"><i class="fa fa-home"></a></i><p class="usersettings"><%= link_to "Home", root_path, :method => :get %></p></li>
-				<li><i class="fa fa-gamepad"></i><p class="usersettings"><%= link_to "Games", games_path, :method => :get %></p></li>
-				<li><i class="fa fa-user"></i></i><p class="usersettings"><%= link_to "Players", index_path, :method => :get %></p></li>
+				<li><a href="/games"><i class="fa fa-gamepad"></i></a><p class="usersettings"><%= link_to "Games", games_path, :method => :get %></p></li>
+				<li><a href="/index"><i class="fa fa-user"></i></a></i><p class="usersettings"><%= link_to "Players", index_path, :method => :get %></p></li>
 				<% if current_user != nil %>
-				<li><i class="fa fa-pencil-square-o"></i><p class="usersettings"><%= link_to "settings", edit_user_registration_path, :method => :get %></p></li>
-				<li><i class="fa fa-sign-out"></i>
+				<li><a href="/users/edit"><i class="fa fa-pencil-square-o"></i></a><p class="usersettings"><%= link_to "settings", edit_user_registration_path, :method => :get %></p></li>
+				<li><a href="/users/sign_out"><i class="fa fa-sign-out"></a></i>
 					<p class="signout"><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></p></li>
 					<% end %>
 			</ul>

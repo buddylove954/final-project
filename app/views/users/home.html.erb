@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <div class="scroll"><p class="sidebox">
         <% @users.each do |user| %>
         <ul class="list-unstyled">
@@ -11,38 +11,41 @@
           <% end %>
           <li><h4 class="level">Level </h4> <p class="skills"><%= user.skill %></p></li>
           <li><h4 class="topgamelist"> Top Game </h4>
-            <%= link_to(image_tag("#{user.topgame.downcase.delete(":/\\- ")}.png", :alt => "logo", :title => "Home", :class => "logoimg"), "/games/#{$GAME_DROPDOWN.flatten.index(user.topgame)}") %></li>
+          <%= link_to(image_tag("#{user.topgame.downcase.delete(":/\\- ")}.png", :alt => "logo", :title => "Home", :class => "logoimg"), "/games/#{$GAME_DROPDOWN.flatten.index(user.topgame)}") %></li>
           <% end %>
         </ul>
       </p></div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-5">
       <div class="twitchplayer">
         <h2><img class="logo" src="<%= @logo %>"></h2>
-        <iframe id="<%= @game[:id] %>" type="text/html" width="400px" height="300px"
+        <iframe id="<%= @game[:id] %>" type="text/html" width="510px" height="300px"
         src="http://www.twitch.tv/<%= @game[:link] %>/embed"
         frameborder="0"></iframe>
         <h4 class="user">User: <%= @game[:link] %>   <strong class="views">viewers: <%= @game[:viewers] %></strong></h4>
       </div>
     </div>
-    <div class="col-sm-4">
-      <div class="profile">
+    <div class="col-sm-4 profilebox">
+      <div class="col-sm-3">
+        <ul class="list-inline">
+          <h4 class="levelhome">Top Game</h4>
+          <li><%= link_to(image_tag("#{current_user.topgame.downcase.delete(":/\\- ")}.png", :alt => "logo", :title => "Home", :class => "logoimg2"), "/games/#{$GAME_DROPDOWN.flatten.index(current_user.topgame)}") %></li>
+        </ul>
+        <h5 class="useroptions">games</h5>
+      </div>
+      <div class="col-sm-6">
+        <div class="profile">
+          <h5 class="userpro"><i class="fa fa-user uone"></i><%= current_user.name %></h5>
+          <div class="profilepic"><img class="profilepic" src="<%= current_user.avatar.url.to_s %>"></div>
+          <h5 class="useroptions">message</h5>
+        </div>
+      </div>
+      <div class="col-sm-3">
         <h4 class="levelhome">Level</h4>
         <% if current_user.skill == nil %>
-          <% current_user.skill = 1 %>
-          <% end %>
+        <% current_user.skill = 1 %>
+        <% end %>
         <p class="skillsuser"><%= current_user.skill %></p>
-        <h5 class="userpro"><i class="fa fa-user uone"></i><%= current_user.name %></h5>
-        <div class="profilepic"><img class="profilepic" src="<%= current_user.avatar.url.to_s %>"></div>
-        <div class="messagebox">
-        <h5 class="useroptions">friends</h5>
-        <h5 class="useroptions">games</h5>
-        <h5 class="useroptions">messages</h5>
-        <ul class="list-inline">
-        </div>
-        <li><%= link_to(image_tag("#{current_user.topgame.downcase.delete(":/\\- ")}.png", :alt => "logo", :title => "Home", :class => "logoimg2"), "/games/#{$GAME_DROPDOWN.flatten.index(current_user.topgame)}") %></li> 
-        </ul>
+        <h5 class="friends">friends</h5>
       </div>
     </div>
-  </div>
-</div>
