@@ -31,13 +31,13 @@
 .twitchplayer {
 	background-color: white;
 	padding: 10px;
-	border-radius: 5%;
+	border-radius: 1%;
 	border: 2px solid #368256;
 }
 
 .logo {
-	margin-top: -29px;
-	margin-left: 150px;
+	margin-top: -5%;
+	margin-left: 40%;
 }
 
 .top-row {
@@ -100,23 +100,26 @@ body {
 	width: 120px;
 	height: 120px;
 	border-radius: 50%;
-	border: 1px solid black;
+	margin-left: 3%;
 }
 
 .userpro {
 	color: #368256;
-	margin-top: -65%;
-	margin-left: -6%;
+	text-align: center;
+	font-family: georgia, serif;
+	font-size: 18px;
+	letter-spacing: 1px;
+	margin-left: -18%;
 }
 
 .useroptions {
-	color: #f0fff0;
+	color: #292E31;
 	text-align: center;	
 }
 
 .levelhome {
-	color: white;
-	margin-left: 106%;
+	color: #292E31;
+	text-align: center;
 }
 
 .field  {
@@ -154,7 +157,7 @@ body {
 .uone {
 	color: green;
 	margin-right: 5px;
-	font-size: 12px;
+	font-size: 16px;
 }
 
 div.scroll {
@@ -162,8 +165,8 @@ div.scroll {
     border: 10px solid #368256;
     width: 300px;
     height: 100vh;
-    margin-top: -16%;
-    margin-left: -4%;
+    margin-top: -24%;
+    margin-left: -8%;
     overflow: scroll;
 	
 }
@@ -269,11 +272,10 @@ div.scroll {
 }
 
 .logoimg2 {
-	width: 70px;
-	height: 70px;
+	width: 50px;
+	height: 50px;
 	border-radius: 30%;
-	margin-top: -600%;
-	margin-left: -170%; 
+	margin-left: 20%;
 }
 
 .gamesheader {
@@ -371,13 +373,32 @@ div.scroll {
 
 .skillsuser {
 	color: gold;
-	border: 1px dashed white;
+	border: 1px dashed black;
 	border-radius: 50%;
 	width:40px;
 	height: 40px;
-	margin-left: 5px;
 	font-size: 28px;
 	text-align: center;
-	margin-left: 109%;
+	margin-left: 24%;
 }
 
+.logonextgame {
+	width: 40px;
+	height: 40px;
+}
+
+.messagebox {
+	margin-left: -15%;
+}
+
+.profilebox {
+	border: 2px solid #368256;
+	background-color: white;
+	padding-top: 1%;
+	border-radius: 1%;
+}
+
+.friends {
+	color: #292E31;
+	text-align: center;
+}
