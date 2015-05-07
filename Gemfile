@@ -18,6 +18,8 @@ gem 'twitch', '~> 0.0.4'
 gem 'devise'
 gem 'jquery-rails'
 gem 'carrierwave'
+gem "fog"
+gem 'carrierwave_direct'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
