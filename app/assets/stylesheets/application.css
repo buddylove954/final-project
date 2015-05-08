@@ -114,7 +114,11 @@ body {
 
 .useroptions {
 	color: #292E31;
-	text-align: center;	
+	text-align: center;
+	font-family: georgia, serif;
+	letter-spacing:1px;	
+	line-height: 15px;
+	font-size: 16px;
 }
 
 .levelhome {
@@ -400,5 +404,33 @@ div.scroll {
 
 .friends {
 	color: #292E31;
+	text-align: center;
+	font-family: georgia, serif;
+	letter-spacing:1px;	
+	line-height: 15px;
+	font-size: 16px;
+	margin-right: -6%;
+}
+
+.linksidename {
+	color: #292E31;
+}
+
+.linksidename:hover {
+	text-decoration: none;
+	color: seagreen;
+}
+
+.unfollow_butt {
+	margin-top: 5%;
+	margin-left: 24%;
+}
+
+.follow_butt {
+	margin-top: 5%;
+	margin-left: 24%;
+}
+
+.followingcount {
 	text-align: center;
 }

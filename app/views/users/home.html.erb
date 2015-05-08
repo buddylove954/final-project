@@ -4,7 +4,7 @@
       <div class="scroll"><p class="sidebox">
         <% @users.each do |user| %>
         <ul class="list-unstyled">
-          <li><a href="/users/<%= user.id %>"><h3 class="sidename"><%= user.name %></h3></a></li>
+          <li><a class="linksidename" href="/users/<%= user.id %>"><h3 class="sidename"><%= user.name %></h3></a></li>
           <img class="sideimg" src="<%= user.avatar %>">
           <% if user.skill == nil %>
           <% user.skill = 1 %>
@@ -37,7 +37,13 @@
         <div class="profile">
           <h5 class="userpro"><i class="fa fa-user uone"></i><%= current_user.name %></h5>
           <div class="profilepic"><img class="profilepic" src="<%= current_user.avatar.url.to_s %>"></div>
-          <h5 class="useroptions">message</h5>
+          <ul class="list-inline">
+          <li><h5>following</h5>
+           <p class="followingcount"><%= current_user.following.count.to_s %></p>
+          </li>
+          <li><h5>followers</h5>
+          <p class="followingcount"><%= current_user.followers.count.to_s %></p>
+        </li>
         </div>
       </div>
       <div class="col-sm-3">
