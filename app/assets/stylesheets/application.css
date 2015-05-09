@@ -434,3 +434,8 @@ div.scroll {
 .followingcount {
 	text-align: center;
 }
+
+.twitchcol {
+	margin-left: -2.5%;
+	margin-right: 1%;
+}
