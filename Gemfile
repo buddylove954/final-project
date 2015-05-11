@@ -21,6 +21,7 @@ gem 'carrierwave'
 gem "fog"
 gem 'carrierwave_direct'
 gem 'rails_12factor', group: :production
+gem 'figaro'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
