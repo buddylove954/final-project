@@ -439,3 +439,22 @@ div.scroll {
 	margin-left: -2.5%;
 	margin-right: 1%;
 }
+
+.showfollowname {
+	color: white;
+}
+
+.usershiftright {
+	margin-left: 3%;
+}
+
+.followsfloat {
+	float: left;
+	margin: 4%;
+}
+
+.followers {
+	color: white;
+	margin-top: -6%;
+text-align: center;
+}

@@ -38,11 +38,11 @@
 					<h5 class="userpro"><i class="fa fa-user uone"></i><%= @user.name %></h5>
 					<div class="profilepic"><img class="profilepic" src="<%= @user.avatar.url.to_s %>"></div>
 					<ul class="list-inline">
-					<li><h5>following</h5>
-					 <p class="followingcount"><%= @user.following.count.to_s %></p>
+					<li><a href="/users/<%= @user.id%>/following"><h5>following</h5>
+					 <p class="followingcount"><%= @user.following.count.to_s %></p></a>
 					</li>
-					<li><h5>followers</h5>
-					<p class="followingcount"><%= @user.followers.count.to_s %></p>
+					<li><a href="/users/<%= @user.id%>/followers"><h5>followers</h5>
+					<p class="followingcount"><%= @user.followers.count.to_s %></p></a>
 				</li>
 				<%= render 'follow_form' %>
 				</ul>
