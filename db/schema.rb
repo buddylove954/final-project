@@ -17,11 +17,9 @@ ActiveRecord::Schema.define(version: 20150507183303) do
   enable_extension "plpgsql"
 
   create_table "games", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer  "user_id"
-    t.string   "game"
-    t.string   "username"
+    t.string  "game"
+    t.string  "username"
+    t.integer "user_id"
   end
 
   add_index "games", ["user_id"], name: "index_games_on_user_id", using: :btree
@@ -37,6 +35,10 @@ ActiveRecord::Schema.define(version: 20150507183303) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
+
+  add_index "relationships", ["followed_id"], name: "index_relationships_on_followed_id", using: :btree
+  add_index "relationships", ["follower_id", "followed_id"], name: "index_relationships_on_follower_id_and_followed_id", unique: true, using: :btree
+  add_index "relationships", ["follower_id"], name: "index_relationships_on_follower_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

@@ -169,7 +169,7 @@ div.scroll {
     border: 10px solid #368256;
     width: 300px;
     height: 100vh;
-    margin-top: -24%;
+    margin-top: -3.5%;
     margin-left: -8%;
     overflow: scroll;
 	
@@ -328,8 +328,8 @@ div.scroll {
 	padding: 10px;
 	border-radius: 5%;
 	border: 2px solid #368256;
-	width: 32%;
-	margin-left: 34%;
+	width: 39.5%;
+	margin-left: 30%;
 }
 
 .userpagepro {
@@ -400,6 +400,7 @@ div.scroll {
 	background-color: white;
 	padding-top: 1%;
 	border-radius: 1%;
+	margin-top: 5%;
 }
 
 .friends {
@@ -438,6 +439,7 @@ div.scroll {
 .twitchcol {
 	margin-left: -2.5%;
 	margin-right: 1%;
+	margin-top: 5%;
 }
 
 .showfollowname {
@@ -446,11 +448,8 @@ div.scroll {
 }
 
 .usershiftright {
-	margin-left: 3%;
-	border: 2px solid #368256;
-	background-color: white;
-	padding-top: 1%;
-	border-radius: 1%;
+	margin-left: 4%;
+	margin-top: 2%;
 }
 
 .followsfloat {
@@ -460,6 +459,5 @@ div.scroll {
 
 .followers {
 	color: white;
-	margin-top: -6%;
-text-align: center;
+	text-align: center;
 }

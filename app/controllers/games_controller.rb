@@ -25,8 +25,7 @@ class GamesController < ApplicationController
 			{id: stream["_id"], game: stream["game"],
 			link: stream["_links"]["self"].split('/streams/')[1],
 			 viewers: stream["viewers"]}
-			end	
-			puts @arr[0][:game]		 
+			end		 
 		@logo = @twitch.searchGames({"q"=>"#{@arr[0][:game]}","type"=>"suggest"})[:body]["games"][0]["logo"]["medium"]
 	end
 
