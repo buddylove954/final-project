@@ -16,7 +16,7 @@
         </ul>
       </p></div>
     </div>
-    <div class="col-sm-5">
+    <div class="col-sm-5 twitchcol">
       <div class="twitchplayer">
         <h2><img class="logo" src="<%= @logo %>"></h2>
         <iframe id="<%= @game[:id] %>" type="text/html" width="510px" height="300px"
@@ -38,11 +38,11 @@
           <h5 class="userpro"><i class="fa fa-user uone"></i><%= current_user.name %></h5>
           <div class="profilepic"><img class="profilepic" src="<%= current_user.avatar.url.to_s %>"></div>
           <ul class="list-inline">
-          <li><h5>following</h5>
-           <p class="followingcount"><%= current_user.following.count.to_s %></p>
+          <li><a href="/users/<%= current_user.id%>/following"><h5>following</h5>
+           <p class="followingcount"><%= current_user.following.count.to_s %></p></a>
           </li>
-          <li><h5>followers</h5>
-          <p class="followingcount"><%= current_user.followers.count.to_s %></p>
+          <li><a href="/users/<%= current_user.id%>/followers"><h5>followers</h5>
+          <p class="followingcount"><%= current_user.followers.count.to_s %></p></a>
         </li>
         </div>
       </div>

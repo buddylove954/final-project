@@ -4,7 +4,7 @@
 		<img class="userpagepro" src="<%= @user.avatar.url.to_s %>">
 	</div>
 	<div class="col-sm-4">
-		<h2 class="followers">Followers</h2>
+		<h2 class="followers">Following</h2>
 <% @users.each do |user| %>
 <li class="followsfloat">
 <a href="/users/<%=user.id%>"><h4 class="showfollowname"><%= user.name %></h4></a>
