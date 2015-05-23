@@ -7,28 +7,6 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div class="container-fluid">
-		<div class="row top-row">
-			<div class="col-sm-4">
-				<h1><%= image_tag("Scrollcon.png", class: "scrolls") %>Hermit List</h1>
-			</div>
-			<div class="col-sm-4">
-				<!-- <input type="text" class="form-control" placeholder="Search"><button class="btn btn-danger">Search</button> -->
-			</div>
-			<div class="col-sm-4">
-			<ul class="list-inline links">
-				<li><a class="homie" href="/"><i class="fa fa-home"></a></i><p class="usersettings"><%= link_to "Home", root_path, :method => :get %></p></li>
-				<li><a href="/games"><i class="fa fa-gamepad"></i></a><p class="usersettings"><%= link_to "Games", games_path, :method => :get %></p></li>
-				<li><a href="/index"><i class="fa fa-user"></i></a></i><p class="usersettings"><%= link_to "Players", index_path, :method => :get %></p></li>
-				<% if current_user != nil %>
-				<li><a href="/users/edit"><i class="fa fa-pencil-square-o"></i></a><p class="usersettings"><%= link_to "settings", edit_user_registration_path, :method => :get %></p></li>
-				<li><a href="/users/sign_out"><i class="fa fa-sign-out"></a></i>
-					<p class="signout"><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></p></li>
-					<% end %>
-			</ul>
-			</div>
-		</div>
-	</div>
 
 <%= yield %>
 
