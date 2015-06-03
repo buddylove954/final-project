@@ -89,7 +89,9 @@ li {
 }
 
 body {
-	background-color: #292E31;
+	background-color: lightgrey;
+	background-image: url('');
+	background-repeat: no-repeat;
 }
 
 .views {
