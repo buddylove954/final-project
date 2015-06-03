@@ -46,6 +46,7 @@ class UsersController < ApplicationController
 
 	def show
 		@user = User.find(params[:id])
+		@posts = @user.posts.paginate(page: params[:page])
 		@twitch = Twitch.new
 		@streams = @twitch.getStreams({"game"=>@user.topgame})[:body]["streams"]
 		@arr = @streams.map do |stream|
